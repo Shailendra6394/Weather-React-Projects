@@ -11,7 +11,7 @@ const GEO_API_OPTIONS = {
   },
 };
 
-export async function fetchWeatherData(lat, lon) {
+export async fetchWeatherData(lat, lon) {
   try {
     let [weatherPromise, forcastPromise] = await Promise.all([
       fetch(
